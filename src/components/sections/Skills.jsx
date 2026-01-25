@@ -17,22 +17,22 @@ const Skills = () => {
     skillsIntroAnimation(skillsRef.current,wrapperRef.current);
   });
 
-  // useEffect(() => {
-  //   const handleLoad = () => {
-  //     // Wait for fonts and images
-  //     document.fonts.ready.then(() => {
-  //       ScrollTrigger.refresh();
-  //     });
-  //   };
+  useEffect(() => {
+    const handleLoad = () => {
+      // Wait for fonts and images
+      document.fonts.ready.then(() => {
+        ScrollTrigger.refresh();
+      });
+    };
 
-  //   if (document.readyState === 'complete') {
-  //     handleLoad();
-  //   } else {
-  //     window.addEventListener('load', handleLoad);
-  //   }
+    if (document.readyState === 'complete') {
+      handleLoad();
+    } else {
+      window.addEventListener('load', handleLoad);
+    }
 
-  //   return () => window.removeEventListener('load', handleLoad);
-  // }, []);
+    return () => window.removeEventListener('load', handleLoad);
+  }, []);
 
     return (
     <div 
