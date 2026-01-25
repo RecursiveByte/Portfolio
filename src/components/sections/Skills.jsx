@@ -16,10 +16,6 @@ const Skills = () => {
   useGSAP(() => {
     skillsIntroAnimation(skillsRef.current,wrapperRef.current);
   });
-
- useEffect(() => {
-    ScrollTrigger.refresh(); // ✅ Now works
-  }, []);
   
   useEffect(() => {
     const handleLoad = () => {
