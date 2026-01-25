@@ -9,11 +9,34 @@ export const skillsIntroAnimation = (container, wrapper) => {
   const mm = gsap.matchMedia();
 
   mm.add("(min-width: 1024px)", () => {
+    // Force hardware acceleration and containment
+    gsap.set(wrapper, {
+      overflow: "hidden",
+      willChange: "transform",
+    });
+
+    gsap.set(container, {
+      willChange: "transform",
+      backfaceVisibility: "hidden",
+    });
+
+    // Pin with proper spacing
+    ScrollTrigger.create({
+      trigger: wrapper,
+      start: "top top",
+      end: "+=150%", // Adjust this value
+      pin: true,
+      pinSpacing: "margin", // This is key
+      anticipatePin: 1,
+      markers: false, // Debug
+    });
+
+    // Animation
     gsap.fromTo(
       container,
       {
-        y: 200,
-        rotateX: -60,
+        y: 300,
+        rotateX: -45,
         opacity: 0,
       },
       {
@@ -24,62 +47,43 @@ export const skillsIntroAnimation = (container, wrapper) => {
         scrollTrigger: {
           trigger: wrapper,
           start: "top top",
-          end: "+=100%",
-          scrub: 2,
-          pin: true,
-          pinSpacing: true, // ✅ CRITICAL
-          anticipatePin: 1, // ✅ Helps with scroll restoration
-          invalidateOnRefresh: true, // ✅ Recalculate on resize
-           onRefresh: (self) => {
-            self.scroll(self.scroll()); // Force recalculation
-          }
-
-        }
+          end: "bottom top",
+          scrub: 1.5,
+          // markers: true, // Debug
+        },
       }
     );
   });
 
   mm.add("(max-width: 1023px)", () => {
-    const boxes = container.querySelectorAll(".skill-box");
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: container,
-        start: "top 85%",
-        end: "top -100%",
-        scrub: 2,
-      },
-    });
-
-    tl.fromTo(
+    // Mobile - no 3D transforms
+    gsap.fromTo(
       container,
       {
-        x: 150,
-        y: 150,
+        y: 80,
         opacity: 0,
       },
       {
-        x: 0,
         y: 0,
         opacity: 1,
-        ease: "power3.out",
-      }
-    );
-
-    tl.fromTo(
-      boxes,
-      {
-        x: 120,
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        stagger: 1,
-        ease: "power3.out",
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: container,
+          start: "top 85%",
+          toggleActions: "play none none reverse",
+        }
       }
     );
   });
 
-  return () => mm.revert();
+  // Refresh ScrollTrigger after a delay
+  setTimeout(() => {
+    ScrollTrigger.refresh();
+  }, 100);
+
+  return () => {
+    mm.revert();
+    ScrollTrigger.getAll().forEach(st => st.kill());
+  };
 };
