@@ -29,7 +29,10 @@ export const skillsIntroAnimation = (container, wrapper) => {
           pin: true,
           pinSpacing: true, // ✅ CRITICAL
           anticipatePin: 1, // ✅ Helps with scroll restoration
-          // invalidateOnRefresh: true, // ✅ Recalculate on resize
+          invalidateOnRefresh: true, // ✅ Recalculate on resize
+           onRefresh: (self) => {
+            self.scroll(self.scroll()); // Force recalculation
+          }
 
         }
       }
