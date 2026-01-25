@@ -16,7 +16,7 @@ const Skills = () => {
     return (
     <div 
     ref={wrapperRef}
-    className="perspective-distant  bg-red-500 z-10">
+    className="perspective-distant w-screen min-h-screen  bg-red-500 z-10">
     <div 
     ref={skillsRef}
     style={{transformStyle:"preserve-3d"}}
