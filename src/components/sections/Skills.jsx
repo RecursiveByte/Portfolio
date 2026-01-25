@@ -16,28 +16,12 @@ const Skills = () => {
   useGSAP(() => {
     skillsIntroAnimation(skillsRef.current,wrapperRef.current);
   });
-  
-  useEffect(() => {
-    const handleLoad = () => {
-      // Wait for fonts and images
-      document.fonts.ready.then(() => {
-        ScrollTrigger.refresh();
-      });
-    };
 
-    if (document.readyState === 'complete') {
-      handleLoad();
-    } else {
-      window.addEventListener('load', handleLoad);
-    }
-
-    return () => window.removeEventListener('load', handleLoad);
-  }, []);
 
     return (
     <div 
     ref={wrapperRef}
-    className="perspective-distant w-screen bg-red-500 z-10">
+    className="perspective-distant w-screen ">
     <div 
     ref={skillsRef}
     style={{transformStyle:"preserve-3d"}}
