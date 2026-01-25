@@ -9,34 +9,11 @@ export const skillsIntroAnimation = (container, wrapper) => {
   const mm = gsap.matchMedia();
 
   mm.add("(min-width: 1024px)", () => {
-    // Force hardware acceleration and containment
-    gsap.set(wrapper, {
-      overflow: "hidden",
-      willChange: "transform",
-    });
-
-    gsap.set(container, {
-      willChange: "transform",
-      backfaceVisibility: "hidden",
-    });
-
-    // Pin with proper spacing
-    ScrollTrigger.create({
-      trigger: wrapper,
-      start: "top top",
-      end: "+=150%", // Adjust this value
-      pin: true,
-      pinSpacing: "margin", // This is key
-      anticipatePin: 1,
-      markers: false, // Debug
-    });
-
-    // Animation
     gsap.fromTo(
       container,
       {
-        y: 300,
-        rotateX: -45,
+        y: 200,
+        rotateX: -60,
         opacity: 0,
       },
       {
@@ -47,43 +24,98 @@ export const skillsIntroAnimation = (container, wrapper) => {
         scrollTrigger: {
           trigger: wrapper,
           start: "top top",
-          end: "bottom top",
-          scrub: 1.5,
-          // markers: true, // Debug
+          end: "+=100%",
+          scrub: 2,
+          pin: true,
+          pinSpacing: true
         },
       }
     );
-  });
 
-  mm.add("(max-width: 1023px)", () => {
-    // Mobile - no 3D transforms
-    gsap.fromTo(
+    const boxes = container.querySelectorAll(".skill-box");
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: container,
+        start: "top 85%",
+        end: "top -100%",
+        scrub: 2,
+      },
+    });
+
+    tl.fromTo(
       container,
       {
-        y: 80,
+        x: 150,
+        y: 150,
         opacity: 0,
       },
       {
+        x: 0,
         y: 0,
         opacity: 1,
-        duration: 1,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: container,
-          start: "top 85%",
-          toggleActions: "play none none reverse",
-        }
+        ease: "power3.out",
+      }
+    );
+
+    tl.fromTo(
+      boxes,
+      {
+        x: 120,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        stagger: 1,
+        ease: "power3.out",
       }
     );
   });
 
-  // Refresh ScrollTrigger after a delay
-  setTimeout(() => {
-    ScrollTrigger.refresh();
-  }, 100);
 
-  return () => {
-    mm.revert();
-    ScrollTrigger.getAll().forEach(st => st.kill());
-  };
-};
+
+  mm.add("(max-width: 1023px)", () => {
+    const boxes = container.querySelectorAll(".skill-box");
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: container,
+        start: "top 85%",
+        end: "top -100%",
+        scrub: 2,
+      },
+    });
+
+    tl.fromTo(
+      container,
+      {
+        x: 150,
+        y: 150,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        y: 0,
+        opacity: 1,
+        ease: "power3.out",
+      }
+    );
+
+    tl.fromTo(
+      boxes,
+      {
+        x: 120,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        stagger: 1,
+        ease: "power3.out",
+      }
+    );
+  });
+
+  return () => mm.revert();
+}; 
