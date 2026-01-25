@@ -26,7 +26,11 @@ export const skillsIntroAnimation = (container, wrapper) => {
           start: "top top",
           end: "+=100%",
           scrub: 2,
-          // pin: true,
+          pin: true,
+          pinSpacing: true, // ✅ CRITICAL
+          anticipatePin: 1, // ✅ Helps with scroll restoration
+          // invalidateOnRefresh: true, // ✅ Recalculate on resize
+
         }
       }
     );
