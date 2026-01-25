@@ -1,7 +1,7 @@
 import React from "react";
 import { skills } from "@/data/data";
 import { skillsIntroAnimation } from "../../animations/aboutAnimations/skillsAnimation";
-import { useRef } from "react";
+import { useRef,useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 
 const Skills = () => {
