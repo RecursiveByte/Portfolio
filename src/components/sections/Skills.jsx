@@ -10,7 +10,7 @@ const Skills = () => {
   const wrapperRef = useRef(null);
 
   useGSAP(() => {
-    // skillsIntroAnimation(skillsRef.current,wrapperRef.current);
+    skillsIntroAnimation(skillsRef.current,wrapperRef.current);
   });
 
     return (
