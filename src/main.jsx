@@ -7,7 +7,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger, useGSAP);
+gsap.registerPlugin(ScrollTrigger); 
+gsap.registerPlugin(useGSAP);
 
 
 createRoot(document.getElementById("root")).render(
