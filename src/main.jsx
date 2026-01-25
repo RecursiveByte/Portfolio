@@ -4,6 +4,8 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
