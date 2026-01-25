@@ -91,7 +91,7 @@ const Skills = () => {
       </div>
 
       {/* Tools */}
-      <div className="skill-box w-[90%] lg:w-full xl:w-[90%] mx-auto border-2  rounded-xl p-4">
+      {/* <div className="skill-box w-[90%] lg:w-full xl:w-[90%] mx-auto border-2  rounded-xl p-4">
         <h3 className="text-3xl text-white mb-3">Tools</h3>
 
         <div className="flex  flex-wrap gap-6">
@@ -106,7 +106,7 @@ const Skills = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
     </div>
     </div>
