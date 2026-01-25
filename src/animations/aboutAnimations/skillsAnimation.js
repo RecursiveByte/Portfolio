@@ -26,7 +26,7 @@ export const skillsIntroAnimation = (container, wrapper) => {
           start: "top top",
           end: "+=100%",
           scrub: 2,
-          pin: true,
+          // pin: true,
         }
       }
     );
