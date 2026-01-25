@@ -10,7 +10,7 @@ import { useGSAP } from "@gsap/react";
 import { navbarIntroAnimation } from "../../animations/homeAnimations/navbarAnimation";
 
 const RESUME_URL =
-  "https://drive.google.com/file/d/1EyzSlc6RWRQho9yk7xph9tsrtoKy46qM/view?pli=1";
+  "https://drive.google.com/file/d/1CcQgVyYTpSczrdGSwDK8jdHtdas4xHKg/view?usp=sharing";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
