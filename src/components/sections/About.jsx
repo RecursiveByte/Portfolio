@@ -14,7 +14,7 @@ const About = () => {
       <Overview />
       <Parallax />
       <Skills />
-      <div className="w-[90%] mx-auto p-4 ">
+      <div className="w-[90%] min-h-fit bg-amber-500 mx-auto p-4 ">
         <SoftSkills />
         <LanguagesKnown />
         <OtherSkills />
