@@ -8,7 +8,7 @@ const SoftSkills = () => {
   const softRef = useRef(null);
 
   useGSAP(() => {
-    slideFromLeft(softRef.current);
+    // slideFromLeft(softRef.current);
   });
   return (
       <div 
