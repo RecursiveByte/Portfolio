@@ -44,7 +44,6 @@ export const linksData = [
 
 export const skills = {
   programmingLanguages: [
-    { name: "Java" },
     { name: "Javascript" },
     { name: "Typescript" },
     { name: "Python" },
@@ -64,7 +63,7 @@ export const skills = {
       { name: "Framer-motion" },
     ],
     backend: [
-      { name: "Spring-boot" },
+      // { name: "Spring-boot" },
       { name: "Nodejs" },
       { name: "Expressjs" },
       { name: "Sequelize" },
