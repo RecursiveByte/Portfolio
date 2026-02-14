@@ -154,13 +154,13 @@ export const otherSkills = [
 ];
 
 export const project = [
-  {
-    projectName: "Book verse",
-    projectImageUrl: "https://res.cloudinary.com/dhjxpn70k/image/upload/v1754208586/book_images/userDashboard.png",
-    projectGithubLink: "https://github.com/RecursiveByte/Mern_Projects/tree/main/brms",
-    projectLink: "https://bookverse-r904.onrender.com/",
-    projectDesc: "A full-stack book review platform with secure authentication, CRUD operations, and responsive design. Users can write, edit, and delete their own reviews while exploring community recommendations."
-  },
+  // {
+    // projectName: "Book verse",
+    // projectImageUrl: "https://res.cloudinary.com/dhjxpn70k/image/upload/v1754208586/book_images/userDashboard.png",
+    // projectGithubLink: "https://github.com/RecursiveByte/Mern_Projects/tree/main/brms",
+    // projectLink: "https://bookverse-r904.onrender.com/",
+    // projectDesc: "A full-stack book review platform with secure authentication, CRUD operations, and responsive design. Users can write, edit, and delete their own reviews while exploring community recommendations."
+  // },
   {
     projectName: "ISL-Vision",
     projectImageUrl: "/assets/images/isl-vision.png",
