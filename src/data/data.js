@@ -154,13 +154,13 @@ export const otherSkills = [
 ];
 
 export const project = [
-  // {
-    // projectName: "Book verse",
-    // projectImageUrl: "https://res.cloudinary.com/dhjxpn70k/image/upload/v1754208586/book_images/userDashboard.png",
-    // projectGithubLink: "https://github.com/RecursiveByte/Mern_Projects/tree/main/brms",
-    // projectLink: "https://bookverse-r904.onrender.com/",
-    // projectDesc: "A full-stack book review platform with secure authentication, CRUD operations, and responsive design. Users can write, edit, and delete their own reviews while exploring community recommendations."
-  // },
+  {
+    projectName: "BookVerse",
+    projectImageUrl: "https://res.cloudinary.com/dhjxpn70k/image/upload/v1773587666/bookVerse_iqfkmm.png",
+    projectGithubLink: "https://github.com/RecursiveByte/BookVerse",
+    projectLink: "https://bookverse-5h53.onrender.com",
+    projectDesc: "BookVerse is a production-grade full-stack book review platform where users can discover books, write reviews, and explore community recommendations. Features include authentication, authorization, role-based access control, rate limiting, proper input validation, debouncing, PostgreSQL indexing, virtual list rendering, pagination with client-side caching, responsive design, and an immersive UI/UX — and more."
+  },
   {
     projectName: "ISL-Vision",
     projectImageUrl: "/assets/images/isl-vision.png",
