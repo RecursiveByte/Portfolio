@@ -175,14 +175,14 @@ export const project = [
     projectImageUrl: "https://res.cloudinary.com/dhjxpn70k/image/upload/v1773587666/bookVerse_iqfkmm.png",
     projectGithubLink: "https://github.com/RecursiveByte/BookVerse",
     projectLink: "https://bookverse-5h53.onrender.com",
-    projectDesc: "BookVerse is a production-grade full-stack book review platform where users can discover books, write reviews, and explore community recommendations. Features include authentication, authorization, role-based access control, rate limiting, proper input validation, debouncing, PostgreSQL indexing, virtual list rendering, pagination with client-side caching, responsive design, and an immersive UI/UX — and more."
+    projectDesc: "BookVerse is a full-stack book review platform where users can discover books, write reviews, and explore community recommendations. Features include authentication, authorization, role-based access control, rate limiting, proper input validation, debouncing, PostgreSQL indexing, virtual list rendering, pagination with client-side caching, responsive design, and an immersive UI/UX — and more."
   },
   {
     projectName: "ISL-Vision",
     projectImageUrl: "/assets/images/isl-vision.png",
     projectGithubLink: "https://github.com/RecursiveByte/ISL-Vision",
     projectLink: "https://isl-vision.onrender.com/",
-    projectDesc: "ISL-Vision is a real-time hand gesture recognition system that detects and predicts Indian Sign Language (ISL) using a webcam. It leverages a custom-trained Deep Neural Network (DNN) model to accurately interpret hand gestures and translate them into meaningful letters."
+    projectDesc: "ISL-Vision is a real-time Indian Sign Language (ISL) recognition system that takes hand gestures as input and predicts corresponding English alphabets using a Neural Network trained on hand landmark features for multi-class alphabet classification, achieving 99% accuracy."
   },
   {
     projectName: "Password Manager",
