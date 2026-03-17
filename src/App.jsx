@@ -26,11 +26,6 @@ const App = () => {
       </div>
       )
      }
-     {/* <Navbar /> */}
-     {/* <Home/> */}
-     {/* <About/> */}
-     {/* <Work/> */}
-     {/* <Contact/> */}
     </div>
   );
 };

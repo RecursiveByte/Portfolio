@@ -1,4 +1,7 @@
 
+export const RESUME_URL =
+  "https://drive.google.com/file/d/1VxpiMsWgihEFe1kc9qRJ9axClgPaxk_m/view?usp=sharing";
+
 export const educationData = [
   {
     level: "10th",
@@ -18,6 +21,21 @@ export const educationData = [
     scoreType: "cpi",
     score: "7.80"
   }
+];
+
+
+export const experiences = [
+  {
+    role: "Backend Developer Intern",
+    company: "Adweb Technology",
+    year: "2025",
+    logo: "/assets/svgs/ADWEB.svg",
+    points: [
+      "Worked on backend systems and APIs following production-grade practices, including clean code architecture, error handling, and RESTful API design.",
+      "Gained hands-on experience with ORMs, authentication systems.",
+      "Designed relational and non-relational databases (MySQL, MongoDB) for real production systems.",
+    ],
+  },
 ];
 
 export const linksData = [
@@ -59,27 +77,25 @@ export const skills = {
       { name: "Redux" },
       { name: "Tailwindcss" },
       { name: "Gsap" },
-      { name: "Threejs" },
+      // { name: "Threejs" },
       { name: "Framer-motion" },
     ],
     backend: [
-      // { name: "Spring-boot" },
       { name: "Nodejs" },
       { name: "Expressjs" },
       { name: "Sequelize" },
       { name: "Fast-api" },
-      { name: "Rest-api" },
       { name: "Mongodb" },
       { name: "Mysql" },
-      { name: "Postgresql" }
+      { name: "Postgresql" },
+      { name: "Prisma" }
     ]
-  // },,
+
   ,
   tools: [
     { name: "Git" },
     { name: "Github" },
     { name: "Github-Copilot" },
-    // { name: "Vite" },
     { name: "Colab" },
     { name: "Jupyter" },
     { name: "VS-Code" },
