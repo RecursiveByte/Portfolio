@@ -84,11 +84,14 @@ export const skills = {
       { name: "Nodejs" },
       { name: "Expressjs" },
       { name: "Sequelize" },
-      { name: "Fast-api" },
       { name: "Mongodb" },
       { name: "Mysql" },
       { name: "Postgresql" },
-      { name: "Prisma" }
+      { name: "Prisma" },
+      { name: "Fast-api" },
+      { name: "LangChain" },
+      { name: "HuggingFace" },
+      { name: "Chroma" },
     ]
 
   ,
