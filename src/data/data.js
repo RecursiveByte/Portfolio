@@ -177,7 +177,7 @@ export const project = [
     projectName: "BookVerse",
     projectImageUrl: "https://res.cloudinary.com/dhjxpn70k/image/upload/v1773587666/bookVerse_iqfkmm.png",
     projectGithubLink: "https://github.com/RecursiveByte/BookVerse",
-    projectLink: "https://bookverse-5h53.onrender.com",
+    projectLink: "https://bookverse.abhoba.com/",
     projectDesc: "BookVerse is a full-stack book review platform where users can discover books, write reviews, and explore community recommendations. Features include authentication, authorization, role-based access control, rate limiting, proper input validation, debouncing, PostgreSQL indexing, virtual list rendering, pagination with client-side caching, responsive design, and an immersive UI/UX — and more."
   },
   {
