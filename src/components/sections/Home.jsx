@@ -32,6 +32,7 @@ const Home = () => {
         loop
         muted
         playsInline
+        preload="auto"
       />
 
       <h1 className=" absolute left-[5%] top-[30%] text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-mono text-white">
