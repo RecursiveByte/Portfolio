@@ -3,9 +3,7 @@ import { useGSAP } from "@gsap/react";
 import { movingTextAnimation } from "@/animations/homeAnimations/movingTextAnimation";
 
 const texts = [
-  "FULL STACK WEB DEVELOPER",
-  "AI ML ENGINEER",
-  "DATA ANALYST",
+  "FULL STACK AI ENGINEER"
 ];
 
 const MovingText = () => {
