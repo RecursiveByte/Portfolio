@@ -5,6 +5,7 @@ import { useRef, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import MainSkillsCard from "../common/MainSkillsCard";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,112 +37,34 @@ const Skills = () => {
         {/* Skills Section */}
         <div className="skills w-full flex flex-col items-center lg:flex-wrap lg:flex-row lg:justify-evenly gap-6 justify-center lg:items-stretch">
           {/* Programming Languages */}
-          <div className="skill-box w-[90%] xl:w-[25%] border-2 rounded-xl p-4">
-            <h3 className="text-3xl text-white mb-3">Programming Languages</h3>
-
-            <div className="flex flex-col gap-4">
-              {skills.programmingLanguages.map((ele, id) => (
-                <div key={id} className="flex gap-3 items-center">
-                  <img
-                    className="w-10"
-                    src={`/assets/svgs/${ele.name}.svg`}
-                    alt={ele.name}
-                  />
-                  <p className="text-2xl text-white">{ele.name}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <MainSkillsCard
+            skills={skills.programmingLanguages}
+            sectionName={"Programming Languages"}
+          />
 
           {/* Frontend */}
-          <div className="skill-box w-[90%] xl:w-[25%] border-2 rounded-xl p-4">
-            <h3 className="text-3xl text-white mb-3">Frontend</h3>
-
-            <div className="flex flex-col gap-4">
-              {skills.frontend.map((ele, id) => (
-                <div key={id} className="flex gap-3 items-center">
-                  <img
-                    className="w-10"
-                    src={`/assets/svgs/${ele.name}.svg`}
-                    alt={ele.name}
-                  />
-                  <p className="text-2xl text-white">{ele.name}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <MainSkillsCard skills={skills.frontend} sectionName={"Frontend"} />
 
           {/* Backend */}
-          <div className="skill-box w-[90%]  xl:w-[25%] border-2 rounded-xl p-4">
-            <h3 className="text-3xl text-white mb-3">Backend</h3>
-
-            <div className="flex flex-col gap-4">
-              {skills.backend.map((ele, id) => (
-                <div key={id} className="flex gap-3 items-center">
-                  <img
-                    className="w-10"
-                    src={`/assets/svgs/${ele.name}.svg`}
-                    alt={ele.name}
-                  />
-                  <p className="text-2xl text-white">{ele.name}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <MainSkillsCard skills={skills.backend} sectionName={"Backend"} />
 
           {/* AI/ML & Deep Learning */}
-          <div className="skill-box w-[90%] xl:w-[25%] border-2 rounded-xl p-4">
-            <h3 className="text-3xl text-white mb-3">AI/ML & Deep Learning</h3>
-            <div className="flex flex-col gap-4">
-              {skills.aiMl.map((ele, id) => (
-                <div key={id} className="flex gap-3 items-center">
-                  <img
-                    className="w-10"
-                    src={`/assets/svgs/${ele.type === "hasLogo" ? ele.name : "NOT"}.svg`}
-                    alt={ele.name}
-                  />
-                  <p className="text-2xl text-white">{ele.name}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <MainSkillsCard
+            skills={skills.aiMl}
+            sectionName={"AI/ML & Deep Learning"}
+          />
 
           {/* Generative AI & Agentic Systems */}
-          <div className="skill-box w-[90%] xl:w-[25%] border-2 rounded-xl p-4">
-            <h3 className="text-3xl text-white mb-3">
-              Generative & Agentic AI
-            </h3>
+          <MainSkillsCard
+            skills={skills.genAndAgenticAi}
+            sectionName={"Generative & Agentic AI"}
+          />
 
-            <div className="flex flex-col gap-4">
-              {skills.genAndAgenticAi.map((ele, id) => (
-                <div key={id} className="flex gap-3 items-center">
-                  <img
-                    className="w-10"
-                    src={`/assets/svgs/${ele.type === "hasLogo" ? ele.name : "NOT"}.svg`}
-                    alt={ele.name}
-                  />
-                  <p className="text-2xl text-white">{ele.name}</p>
-                </div>
-              ))}
-            </div>
-          </div>
           {/*devOps*/}
-
-          <div className="skill-box w-[90%] xl:w-[25%] border-2 rounded-xl p-4">
-            <h3 className="text-3xl text-white mb-3">DevOps & Cloud</h3>
-            <div className="flex flex-col gap-4">
-              {skills.devops.map((ele, id) => (
-                <div key={id} className="flex gap-3 items-center">
-                  <img
-                    className="w-10"
-                    src={`/assets/svgs/${ele.type === "hasLogo" ? ele.name : "NOT"}.svg`}
-                    alt={ele.name}
-                  />
-                  <p className="text-2xl text-white">{ele.name}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <MainSkillsCard
+            skills={skills.devops}
+            sectionName={"DevOps & Cloud"}
+          />
         </div>
 
         {/* Tools */}

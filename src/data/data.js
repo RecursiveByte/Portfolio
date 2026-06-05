@@ -19,7 +19,7 @@ export const educationData = [
     level: "BTech (Cse)",
     institution: "Indian Institute Of Information Technology Manipur (IIIT M)",
     scoreType: "cpi",
-    score: "7.80"
+    score: "7.95"
   }
 ];
 
@@ -68,8 +68,6 @@ export const skills = {
     { name: "C" },
     { name: "C++" },
   ],
-
-  // development: {
     frontend: [
       { name: "Html" },
       { name: "Css" },
@@ -77,7 +75,6 @@ export const skills = {
       // { name: "Redux" },
       { name: "Tailwindcss" },
       { name: "Gsap" },
-      // { name: "Threejs" },
       { name: "Framer-motion" },
     ],
     backend: [
@@ -89,40 +86,43 @@ export const skills = {
       { name: "Postgresql" },
       { name: "Prisma" },
       { name: "Fast-api" },
-      // { name: "LangChain" },
-      // { name: "HuggingFace" },
-      // { name: "Chroma" },
     ],
+
     aiMl: [
-      { name: "Numpy", type: "hasLogo" },
-      { name: "Pandas", type: "hasLogo" },
-      { name: "Scikit-learn", type: "hasLogo" },
-      { name: "Matplotlib", type: "hasLogo" },
-      { name: "Tensorflow", type: "hasLogo" },
-      { name: "Keras", type: "hasLogo" },
-      { name: "PyTorch", type: "hasLogo" },
-      { name: "OpenCV", type: "hasLogo" },
-      { name: "Transformers", type: "noLogo" },
-      { name: "NLP", type: "noLogo" },
+      { name: "Pandas" },
+      { name: "Numpy" },
+      { name: "Scikit-learn" },
+      { name: "Matplotlib" },
+      { name: "Tensorflow" },
+      { name: "Keras" },
+      { name: "PyTorch" },
+      { name: "OpenCV" },
+      { name: "Transformers" },
+      { name: "NLP" },
   ],
+  
   genAndAgenticAi: [
-      { name: "LangChain", type: "hasLogo" },
-      { name: "LangGraph", type: "hasLogo" },
-      { name: "LangSmith", type: "hasLogo" },
-      { name: "HuggingFace", type: "hasLogo" },
-      { name: "ChromaDB", type: "hasLogo" },
-      { name: "Pinecone", type: "hasLogo" },
-      { name: "OpenAI API", type: "hasLogo" },
-      { name: "RAG", type: "noLogo" },
-      { name: "LLMs", type: "noLogo" },
+      { name: "LangChain" },
+      { name: "LangGraph" },
+      { name: "LangSmith" },
+      { name: "HuggingFace" },
+      { name: "ChromaDB" },
+      { name: "Pinecone" },
+      { name: "OpenAI API" },
+      { name: "RAGs" },
+      { name: "LLMs" },
   ],
+  
   devops: [
-      { name: "Docker", type: "hasLogo" },
-      { name: "AWS", type: "hasLogo" },
-      { name: "Github-Actions", type: "hasLogo" },
-      { name: "CI-CD Pipelines", type: "noLogo" },
-      { name: "Render", type: "hasLogo" },
+      { name: "Docker" },
+      { name: "AWS" },
+      { name: "Github-Actions" },
+      { name: "CI-CD Pipelines" },
+      { name: "Render" },
   ],
+
+
+
   tools: [
     { name: "Git" },
     { name: "Github" },
@@ -133,7 +133,7 @@ export const skills = {
     { name: "Antigravity" },
     { name: "Postman" },
     { name: "Figma" },
-    //   {name:"Canva"},
+      // {name:"Canva"},
   ],
 };
 
@@ -207,7 +207,7 @@ export const project = [
     projectImageUrl: "https://res.cloudinary.com/dhjxpn70k/image/upload/v1773587666/bookVerse_iqfkmm.png",
     projectGithubLink: "https://github.com/RecursiveByte/BookVerse",
     projectLink: "https://bookverse.abhoba.com/",
-    projectDesc: "BookVerse is a full-stack book review platform where users can discover books, write reviews, and explore community recommendations. Features include authentication, authorization, role-based access control, rate limiting, proper input validation, debouncing, PostgreSQL indexing, virtual list rendering, pagination with client-side caching, responsive design, and an immersive UI/UX — and more."
+    projectDesc: "BookVerse is a full-stack book review platform where users can discover books, write reviews, and explore community recommendations. Features include authentication, authorization, role-based access control, rate limiting, proper input validation, debouncing, PostgreSQL indexing, virtual list rendering, pagination with client-side caching, responsive design, and an immersive UI/UX and more."
   },
   {
     projectName: "ISL-Vision",
