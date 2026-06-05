@@ -74,7 +74,7 @@ export const skills = {
       { name: "Html" },
       { name: "Css" },
       { name: "React" },
-      { name: "Redux" },
+      // { name: "Redux" },
       { name: "Tailwindcss" },
       { name: "Gsap" },
       // { name: "Threejs" },
@@ -89,12 +89,40 @@ export const skills = {
       { name: "Postgresql" },
       { name: "Prisma" },
       { name: "Fast-api" },
-      { name: "LangChain" },
-      { name: "HuggingFace" },
-      { name: "Chroma" },
-    ]
-
-  ,
+      // { name: "LangChain" },
+      // { name: "HuggingFace" },
+      // { name: "Chroma" },
+    ],
+    aiMl: [
+      { name: "Numpy", type: "hasLogo" },
+      { name: "Pandas", type: "hasLogo" },
+      { name: "Scikit-learn", type: "hasLogo" },
+      { name: "Matplotlib", type: "hasLogo" },
+      { name: "Tensorflow", type: "hasLogo" },
+      { name: "Keras", type: "hasLogo" },
+      { name: "PyTorch", type: "hasLogo" },
+      { name: "OpenCV", type: "hasLogo" },
+      { name: "Transformers", type: "noLogo" },
+      { name: "NLP", type: "noLogo" },
+  ],
+  genAndAgenticAi: [
+      { name: "LangChain", type: "hasLogo" },
+      { name: "LangGraph", type: "hasLogo" },
+      { name: "LangSmith", type: "hasLogo" },
+      { name: "HuggingFace", type: "hasLogo" },
+      { name: "ChromaDB", type: "hasLogo" },
+      { name: "Pinecone", type: "hasLogo" },
+      { name: "OpenAI API", type: "hasLogo" },
+      { name: "RAG", type: "noLogo" },
+      { name: "LLMs", type: "noLogo" },
+  ],
+  devops: [
+      { name: "Docker", type: "hasLogo" },
+      { name: "AWS", type: "hasLogo" },
+      { name: "Github-Actions", type: "hasLogo" },
+      { name: "CI-CD Pipelines", type: "noLogo" },
+      { name: "Render", type: "hasLogo" },
+  ],
   tools: [
     { name: "Git" },
     { name: "Github" },
@@ -102,10 +130,10 @@ export const skills = {
     { name: "Colab" },
     { name: "Jupyter" },
     { name: "VS-Code" },
+    { name: "Antigravity" },
     { name: "Postman" },
     { name: "Figma" },
     //   {name:"Canva"},
-    { name: "Render" }
   ],
 };
 
@@ -161,6 +189,7 @@ export const languages = [
   },
 ];
 
+
 export const otherSkills = [
   {
     title: "Video Editing",
@@ -194,4 +223,14 @@ export const project = [
     projectGithubLink: "https://github.com/RecursiveByte/Mern_Projects/tree/main/PasswordManager_2.0",
     projectDesc: "A secure multi-user password management application built with the MERN stack, featuring encryption, user authentication, and an intuitive interface for safe password storage and management."
   }
+];
+
+
+export const csFundamentals = [
+  { title: "Data Structures & Algorithms" },
+  { title: "Object-Oriented Programming" },
+  { title: "Database Management Systems" },
+  { title: "Operating Systems" },
+  { title: "Computer Networks" },
+  { title: "System Design" },
 ];

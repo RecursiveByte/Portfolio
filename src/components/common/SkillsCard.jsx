@@ -1,33 +1,39 @@
 import React from "react";
 import { useRef } from "react";
-import { softSkills } from "../../data/data";
 import { slideFromLeft } from "../../animations/aboutAnimations/slideFromLeft";
 import { useGSAP } from "@gsap/react";
 
-const SoftSkills = () => {
-  const softRef = useRef(null);
+
+const SkillsCard = ({skills,sectionName}) => {
+  const skillRef = useRef(null);
 
   useGSAP(() => {
-    slideFromLeft(softRef.current);
+    slideFromLeft(skillRef.current);
   });
   return (
       <div 
-      ref={softRef}
+      ref={skillRef}
     className="p-6 bg-transparent rounded-lg shadow-lg text-white">
       <h2 className="text-2xl font-bold mb-4 text-[#42b3f5]">
-        Soft Skills
+        {sectionName}
       </h2>
       <ul
         className="space-y-3 "
       >
-        {softSkills.map((skill, index) => (
+        {skills.map((skill, index) => (
           <li
             key={index}
             className="flex items-center"
           >
             <span className="w-4 h-4 bg-[#42b3f5] rounded-full mr-3"></span>
             <span>
-              <strong>{skill.title}</strong>: {skill.description}
+              {skill.description ? (
+                <>
+                <strong>{skill.title}</strong> : {skill.description}
+                </>)
+                : <strong className="text-xl" >{skill.title}</strong>}
+               
+             
             </span>
           </li>
         ))}
@@ -36,4 +42,4 @@ const SoftSkills = () => {
   );
 };
 
-export default SoftSkills;
+export default SkillsCard;
