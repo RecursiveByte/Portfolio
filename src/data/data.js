@@ -59,84 +59,80 @@ export const linksData = [
   },
 ];
 
-
 export const skills = {
   programmingLanguages: [
-    { name: "Javascript" },
-    { name: "Typescript" },
-    { name: "Python" },
-    { name: "C" },
-    { name: "C++" },
+    { name: "Javascript", type: "hasLogo" },
+    { name: "Typescript", type: "hasLogo" },
+    { name: "Python", type: "hasLogo" },
+    { name: "C", type: "hasLogo" },
+    { name: "C++", type: "hasLogo" },
   ],
-    frontend: [
-      { name: "Html" },
-      { name: "Css" },
-      { name: "React" },
-      // { name: "Redux" },
-      { name: "Tailwindcss" },
-      { name: "Gsap" },
-      { name: "Framer-motion" },
-    ],
-    backend: [
-      { name: "Nodejs" },
-      { name: "Expressjs" },
-      { name: "Sequelize" },
-      { name: "Mongodb" },
-      { name: "Mysql" },
-      { name: "Postgresql" },
-      { name: "Prisma" },
-      { name: "Fast-api" },
-    ],
 
-    aiMl: [
-      { name: "Pandas" },
-      { name: "Numpy" },
-      { name: "Scikit-learn" },
-      { name: "Matplotlib" },
-      { name: "Tensorflow" },
-      { name: "Keras" },
-      { name: "PyTorch" },
-      { name: "OpenCV" },
-      { name: "Transformers" },
-      { name: "NLP" },
+  frontend: [
+    { name: "Html", type: "hasLogo" },
+    { name: "Css", type: "hasLogo" },
+    { name: "React", type: "hasLogo" },
+    { name: "Tailwindcss", type: "hasLogo" },
+    { name: "Gsap", type: "hasLogo" },
+    { name: "Framer-motion", type: "hasLogo" },
   ],
-  
+
+  backend: [
+    { name: "Nodejs", type: "hasLogo" },
+    { name: "Expressjs", type: "hasLogo" },
+    { name: "Sequelize", type: "hasLogo" },
+    { name: "Mongodb", type: "hasLogo" },
+    { name: "Mysql", type: "hasLogo" },
+    { name: "Postgresql", type: "hasLogo" },
+    { name: "Prisma", type: "hasLogo" },
+    { name: "Fast-api", type: "hasLogo" },
+  ],
+
+  aiMl: [
+    { name: "Pandas", type: "hasLogo" },
+    { name: "Numpy", type: "hasLogo" },
+    { name: "Scikit-learn", type: "hasLogo" },
+    { name: "Matplotlib", type: "hasLogo" },
+    { name: "Tensorflow", type: "hasLogo" },
+    { name: "Keras", type: "hasLogo" },
+    { name: "PyTorch", type: "hasLogo" },
+    { name: "OpenCV", type: "hasLogo" },
+    { name: "Transformers", type: "noLogo" },
+    { name: "NLP", type: "noLogo" },
+  ],
+
   genAndAgenticAi: [
-      { name: "LangChain" },
-      { name: "LangGraph" },
-      { name: "LangSmith" },
-      { name: "HuggingFace" },
-      { name: "ChromaDB" },
-      { name: "Pinecone" },
-      { name: "OpenAI API" },
-      { name: "RAGs" },
-      { name: "LLMs" },
+    { name: "LangChain", type: "hasLogo" },
+    { name: "LangGraph", type: "hasLogo" },
+    { name: "LangSmith", type: "hasLogo" },
+    { name: "HuggingFace", type: "hasLogo" },
+    { name: "ChromaDB", type: "hasLogo" },
+    { name: "Pinecone", type: "hasLogo" },
+    { name: "OpenAI API", type: "hasLogo" },
+    { name: "RAGs", type: "noLogo" },
+    { name: "LLMs", type: "noLogo" },
   ],
-  
+
   devops: [
-      { name: "Docker" },
-      { name: "AWS" },
-      { name: "Github-Actions" },
-      { name: "CI-CD Pipelines" },
-      { name: "Render" },
+    { name: "Docker", type: "hasLogo" },
+    { name: "AWS", type: "hasLogo" },
+    { name: "Github-Actions", type: "hasLogo" },
+    { name: "CI-CD Pipelines", type: "noLogo" },
+    { name: "Render", type: "hasLogo" },
   ],
-
-
 
   tools: [
-    { name: "Git" },
-    { name: "Github" },
-    { name: "Github-Copilot" },
-    { name: "Colab" },
-    { name: "Jupyter" },
-    { name: "VS-Code" },
-    { name: "Antigravity" },
-    { name: "Postman" },
-    { name: "Figma" },
-      // {name:"Canva"},
+    { name: "Git", type: "hasLogo" },
+    { name: "Github", type: "hasLogo" },
+    { name: "Github-Copilot", type: "hasLogo" },
+    { name: "Colab", type: "hasLogo" },
+    { name: "Jupyter", type: "hasLogo" },
+    { name: "VS-Code", type: "hasLogo" },
+    { name: "Antigravity", type: "hasLogo" },
+    { name: "Postman", type: "hasLogo" },
+    { name: "Figma", type: "hasLogo" },
   ],
 };
-
 
 export const softSkills = [
   {

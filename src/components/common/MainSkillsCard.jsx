@@ -9,8 +9,7 @@ const MainSkillsCard = ({skills,sectionName}) => {
         <div key={id} className="flex gap-3 items-center">
           <img
             className="w-10"
-            src={`/assets/svgs/${ele.name}.svg`}
-            onError={(e)=>{e.target.src = "/assets/svgs/NOT.svg"}}
+            src={`/assets/svgs/${ele.type === "hasLogo" ? ele.name : "NOT"}.svg`}
             alt={ele.name}
           />
           <p className="text-2xl text-white">{ele.name}</p>
