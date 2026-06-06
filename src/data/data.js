@@ -1,6 +1,6 @@
 
 export const RESUME_URL =
-  "https://drive.google.com/file/d/1MvBJMd0TRI0Nen_cXiyy8Fvdh1HDwKCv/view?usp=sharing";
+  "https://drive.google.com/file/d/1Dh2or2L171K-AXHX7OHltR_OomWdHEyw/view?usp=sharing";
 
 export const educationData = [
   {
